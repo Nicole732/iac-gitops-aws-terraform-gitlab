@@ -2,7 +2,7 @@
 
 ## Project Details
 **Part 1**: Automate entire process of provisioning EC2 servers, AWS networking resources, IAM roles & permissions using Terraform
-**Part 2**: 
+**Part 2**: Create a GitLab CI/CD pipeline for Terraform Infrastructure with built-in security scanning and code validation - GitOps
 
 
 ## Table of contents
@@ -15,7 +15,7 @@
 - [Licensing](#licensing)
 
 ## Technologies Used
-Terraform, Docker, Git, AWS (VPC, EC2, IAM), GitLab CI
+Terraform, Docker, Git, AWS (VPC, EC2, IAM, S#), GitLab CI, TFSec
 
 ## Project Description:
 **Part 1**
@@ -46,6 +46,13 @@ Terraform, Docker, Git, AWS (VPC, EC2, IAM), GitLab CI
 
 
 **Part 2**
+- Create AWS S3 bucket and configure Terraform to use bucket for storing Terraform state
+- Create new GitLab CI pipeline for Terraform infrastructure that:
+    - Initializes Terraform and builds a plan artifact 
+    - Validates Terraform configuration and syntax
+    - Runs a TFSec security scan on Terraform code and produces scan result artifact
+    - Deploys the Terraform code to AWS
+
 
 ## Terraform Configuration
 - providers:
@@ -82,6 +89,8 @@ This project build on previous one:
 ![GitHub](https://github.com/Nicole732/devsecops-sast-dast-gitlab-cicd)
 It uses OAWSP Juice Shop vulnerable application as the application code:
 [![Juice Shop Screenshot Slideshow](https://img.shields.io/github/release/juice-shop/juice-shop.svg)](https://github.com/juice-shop/juice-shop/releases/latest)
+
+**Part 2**
 
 
 ## Contributors
