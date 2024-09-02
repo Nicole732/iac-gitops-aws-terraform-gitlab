@@ -74,12 +74,12 @@ Notes:
     - aws_secret_access_key
     - aws_region
     - env_prefix
-    - runner_registration_token
+    - runner_registration_token from adding runner to CI/CD project mentionned in initial project
 - For verbose output, set export TF_LOG=DEBUG before running TF commands
 
 ## Initial Project
 This project build on previous one: 
-![GitHub](https://github.com/Nicole732/devsecops-sast-cicd-gitlab)
+![GitHub](https://github.com/Nicole732/devsecops-sast-dast-gitlab-cicd)
 It uses OAWSP Juice Shop vulnerable application as the application code:
 [![Juice Shop Screenshot Slideshow](https://img.shields.io/github/release/juice-shop/juice-shop.svg)](https://github.com/juice-shop/juice-shop/releases/latest)
 
