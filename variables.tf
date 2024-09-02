@@ -1,16 +1,16 @@
 variable "aws_region" {
   type    = string
-  default = "us-east-1"
+  default = ""
 }
 
 variable "aws_profile" {
   type    = string
-  default = "admindevsecops"
+  default = ""
 }
 
 variable "env_prefix" {
   type    = string
-  default = "dev"
+  default = ""
 }
 
 variable "aws_access_key_id" {
