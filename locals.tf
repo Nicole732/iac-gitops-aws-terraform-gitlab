@@ -17,5 +17,5 @@ output "script" {
 output "script-gitlab" {
   value = local.script-gitlab
   # sensitive, cuz registration_token is marked sensitive and script output will not be displayed now
-  sensitive = true 
+  sensitive = true
 }
